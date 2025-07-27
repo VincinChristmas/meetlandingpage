@@ -1,0 +1,164 @@
+/*** MODERN CSS RESET ***/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  /* 3. Enable keyword animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    10. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*** FONT IMPORT ***/
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap');
+
+  /*** GLOBAL STYLES ***/
+  :root {
+    --font-family: 'Red Hat Display', sans-serif;
+  }
+
+  /*** COLOR VARIABLES ***/
+  :root {
+    /* primary */
+    --dark-cyan: hsla(192, 37%, 48%, 1);
+    --dark-violet: hsla(268, 34%, 53%, 1);
+    /* secondary */
+    --light-cyan: hsla(192, 90%, 77%, 1);
+    --light-violet: hsla(268, 100%, 86%, 1);
+    /* neutral */
+    --black: rgb(55, 55, 82);
+    --gray: hsla(240, 10%, 57%, 1);
+    --light-gray: hsla(240, 10%, 57%, 0.25);
+    --white: hsla(0, 0%, 98%, 1);
+    /* buttom hover */
+    --cyan-hover: hsla(192, 54%, 64%, 1);
+    --violet-hover: hsla(268, 55%, 71%, 1);
+  }
+  
+
+  /*** HEADER STYLES ***/
+
+  .logo {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--black);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .header-title--highlight {
+    color: var(--dark-cyan);
+  }
+
+  .header-description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 12px 24px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--white);
+    background-color: var(--dark-cyan);
+    border-radius: 80px;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .header-button--version {
+    color: var(--light-cyan);
+    margin-left: 5px;
+  }
+
+    .header-button:hover {
+        background-color: var(--cyan-hover);
+        cursor: pointer;
+    }
+
+    .header-button--first {
+        margin-bottom: 15px;
+    }
+
+    .header-button--second {
+        background-color: var(--dark-violet);
+        color: var(--light-violet);
+    }
+
+    .header-button--second:hover {
+        background-color: var(--violet-hover);
+    }

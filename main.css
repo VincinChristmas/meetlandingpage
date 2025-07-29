@@ -251,6 +251,7 @@
         height: 80px;
         border-left: 1px solid var(--light-gray);
         margin: 0 auto;
+        color: var(--light-gray);
     }
 
    
@@ -272,7 +273,7 @@
     }
 
     .features-two--text {
-        background: linear-gradient(rgb(30, 71, 74), rgb(4, 54, 58)), url('assets/mobile/image-footer.jpg');
+        background: linear-gradient(var(--dark-cyan), var(--dark-cyan)), url('assets/mobile/image-footer.jpg');
         background-size: cover;
         background-position: center;
         position: relative;
@@ -288,7 +289,7 @@
         background-image: url('assets/mobile/image-footer.jpg');
         background-size: cover;
         background-position: center;
-        opacity: 0.3; /* adjust this value */
+        opacity: 0.25; /* adjust this value */
         z-index: -1;
     }
 
@@ -299,15 +300,49 @@
         position: relative;
         margin-top: -20px;
         opacity: 0.9;
+        padding: 0 20px
     }
 
     .features-two--title {
         font-family: var(--font-family);
-        font-weight: 700;
+        font-weight: 800;
+        font-size: 2.125rem;
         line-height: 1.2;
-        color: var(--dark-cyan);
-        margin-bottom: 20px;
-        
+        color: var(--white);
+        margin-top: 95px;
+        margin-bottom: 60px;      
+    }
+
+    .features-two--paragraph {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--white);
+        margin-bottom: 55px;
+    }
+
+    .features-two--button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: var(--white);
+        background-color: var(--dark-violet);
+        border-radius: 80px;
+        border: none;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin: 0 auto;
+    }
+
+    .features-two--version {
+        color: var(--light-violet);
+        margin-left: 5px;
     }
 
 

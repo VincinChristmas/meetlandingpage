@@ -79,6 +79,101 @@
     --cyan-hover: hsla(192, 54%, 64%, 1);
     --violet-hover: hsla(268, 55%, 71%, 1);
   }
+
+
+  @media (max-width: 769px) {
+    .logo {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .header {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      .header-title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        color: var(--black);
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    
+      .header-title--highlight {
+        color: var(--dark-cyan);
+      }
+    
+      .header-description {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--gray);
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 20px;
+      }
+
+      .header-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .header-button {
+        
+        padding: 12px 24px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 1rem;
+        
+        color: var(--white);
+        background-color: var(--dark-cyan);
+        border-radius: 80px;
+        border: none;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+    
+      .header-button--version {
+        color: var(--light-cyan);
+        margin-left: 5px;
+      }
+    
+        .header-button:hover {
+            background-color: var(--cyan-hover);
+            cursor: pointer;
+        }
+    
+        .header-button--first {
+            margin-right: 15px;
+        }
+    
+        .header-button--second {
+            background-color: var(--dark-violet);
+            color: var(--light-violet);
+        }
+    
+        .header-button--second:hover {
+            background-color: var(--violet-hover);
+        }
+    
+  }
+
+
+  @media (max-width: 376px) {
   
 
   /*** HEADER STYLES ***/
@@ -346,3 +441,4 @@
     }
 
 
+  }

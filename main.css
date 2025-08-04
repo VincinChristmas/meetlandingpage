@@ -512,7 +512,7 @@
 
 /*** MOBILE MEDIA QUERIES ***/ 
 
-@media (max-width: 376px) {
+@media (max-width: 475px) {
 
   .header-content {
     flex-direction: column;
